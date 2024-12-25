@@ -1,0 +1,54 @@
+[
+    {
+        "key": "shift+cmd+i",
+        "command": "editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "cmd+k cmd+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "cmd+k cmd+l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "-editor.debug.action.showDebugHover",
+        "when": "editorTextFocus && inDebugMode"
+    },
+    {
+        "key": "cmd+k cmd+u",
+        "command": "-editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+k u",
+        "command": "-workbench.action.closeUnmodifiedEditors"
+    },
+    {
+        "key": "cmd+k cmd+0",
+        "command": "editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+k cmd+j",
+        "command": "-editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    }
+]
